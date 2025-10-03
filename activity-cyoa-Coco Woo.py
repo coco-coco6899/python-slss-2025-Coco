@@ -156,6 +156,7 @@ time.sleep(1.5)
 print("However, your energy level decreased 20% and the sky is getting darker.")
 time.sleep(1.5)
 print("Your friend Rachel is super hungry.")
+print(">")
 
 
 # problem 2

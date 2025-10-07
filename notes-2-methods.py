@@ -11,7 +11,7 @@ else:
     print("iccc.")
 
     # Ask the customer if they want fries
-    fries_reply = input("Do you want fries?")
+fries_reply = input("Do you want fries?")
 # "yes!"
 if "yes" in fries_reply.lower():
     print("Here are your fries.")

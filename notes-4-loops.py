@@ -64,10 +64,13 @@ rachel.color("pink")
 # mikey.circle()
 # mikey.goto()
 
+
 # Cookie making
 # Set the colour of our choco chip cookie
-for counter in range(100):
-    counter = counter * 50
+# create a function to make cookie
+def make_cookies(x: int, y: int):
+    # for counter in range(100):
+    # counter = counter * 50
     rachel.color("brown")
     rachel.speed(1)
 
@@ -75,35 +78,43 @@ for counter in range(100):
     rachel.pu()
     rachel.setheading(0)  # make sure Rachel point east
     rachel.penup()
-    rachel.goto(-5 + counter, -30 + counter)
+    rachel.goto(-5 + x, -30 + y)
     rachel.pd()
     rachel.circle(30)
     # Draw a circle to represent our cookie
     rachel.pu()
-    rachel.goto(10 + counter, 10 + counter)
+    rachel.goto(10 + x, 10 + y)
     rachel.pd()
     rachel.stamp()
 
     rachel.pu()
-    rachel.goto(10 + counter, -10 + counter)
+    rachel.goto(10 + x, -10 + y)
     rachel.pd()
     rachel.stamp()
 
     rachel.pu()
-    rachel.goto(-10 + counter, -10 + counter)
+    rachel.goto(-10 + x, -10 + y)
     rachel.pd()
     rachel.stamp()
 
     rachel.pu()
-    rachel.goto(-10 + counter, 10 + counter)
+    rachel.goto(-10 + x, 10 + y)
     rachel.pd()
     rachel.stamp()
 
     rachel.pu()
-    rachel.goto(0 + counter, 0 + counter)
+    rachel.goto(0 + x, 0 + y)
     rachel.pd()
     rachel.stamp()
 
+
+for counter in range(50):
+    counter = counter * 50
+    make_cookies(0, 0)
+    make_cookies(100, 100)
+    make_cookies(-100, -100)
+    make_cookies(-100, 100)
+    make_cookies(100, -100)
 
 # Put a choco chip at the top right
 # also bottom right , bottom left and top left
